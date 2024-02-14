@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <main class="min-h-screen bg-black bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <section class="dashboard hidden">
+            <div class="min-h-screen flex gap-6  flex-col justify-center items-center ">
+                <h1 class="text-8xl text-white">ALPHABET CLASH</h1>
+                <p class="text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="text-black bg-white rounded-lg px-6 py-4">Play Now</button>
+
+            </div>
+        </section>
+        <section class="gameControl flex items-center justify-center flex-col gap-8">
+            <div class="artboard artboard-horizontal phone-6 w-20 bg-[#ffffffB3] rounded-lg border-8 border-[#555D50] mt-5">
+                <p class="bg-black max-w-max text-white p-4 w-full flex items-center justify-center">Don't watch keyboard while playing...</p>
+
+            </div>
+
+            <div>
+                <!-- Keyboard Layout -->
+                <div class="flex justify-center gap-2 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                </div>
+                <div class="flex justify-center gap-2 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                </div>
+                <div class="flex justify-center gap-2 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
