@@ -11,19 +11,19 @@
 
 </head>
 
-<body class="">
+<body>
     <main class="min-h-screen bg-black bg-[url(images/background.png)] bg-no-repeat bg-center">
-        <section class="dashboard hidden">
+        <section id="dashboard">
             <div class="min-h-screen flex gap-6  flex-col justify-center items-center ">
                 <h1 class="text-8xl text-white">ALPHABET CLASH</h1>
                 <p class="text-white">Unleash Your Keyboard : Press “Enter” to Play</p>
-                <button class="text-black bg-white rounded-lg px-6 py-4">Play Now</button>
+                <button onclick="playNow()" class="text-black bg-white rounded-lg px-6 py-4">Play Now</button>
 
             </div>
         </section>
 
 
-        <section class="gameControl hidden">
+        <section id="gameControl" class="hidden">
             <div class="items-center flex justify-center flex-col gap-7">
                 <div
                     class="artboard artboard-horizontal phone-6 bg-[#ffffffB3] rounded-lg border-[#555D50] border-[20px] mt-5">
@@ -93,7 +93,7 @@
         </section>
 
 
-        <section class="result">
+        <section id="result" class="hidden">
             
               <div class="flex flex-col justify-center items-center min-h-screen">
                 <div class="text-white text-center space-y-6 bg-gradient-to-br from-gray-300 via-gray-800 to-transparent rounded-lg p-11">
