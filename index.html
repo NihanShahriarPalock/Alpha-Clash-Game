@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <main class="min-h-screen bg-black bg-[url(images/background.png)] bg-no-repeat bg-center">
+    <main class="min-h-screen  bg-gradient-to-r from-sky-800 to-indigo-500 ">
         <section id="dashboard">
             <div class="min-h-screen flex gap-6  flex-col justify-center items-center ">
                 <h1 class="text-8xl text-white">ALPHABET CLASH</h1>
@@ -25,7 +25,7 @@
 
         <section id="gameControl" class="hidden">
             <div class="items-center flex justify-center flex-col gap-7">
-                <div
+                <!-- <div
                     class="artboard artboard-horizontal phone-6 bg-[#ffffffB3] rounded-lg border-[#555D50] border-[20px] mt-5">
                     <div class="flex justify-center">
                         <p class="bg-[#555D50]  text-white -mt-1 pb-4 px-6 rounded-br-2xl rounded-bl-2xl">Don't watch
@@ -36,11 +36,88 @@
                         <p id="currentAlphabet" class="font-extrabold text-black text-7xl">Y</p>
                     </div>
 
+                </div> -->
+
+                <div class="mockup-phone mt-10">
+                    <div class="camera"></div>
+                    <div class="display">
+                        <div class="artboard artboard-demo w-[360px] h-[580px]">
+
+                           
+                            <!-- Life and Score -->
+                            <div class="flex gap-x-32 mt-8">
+                                <div class="flex text-white bg-[#8F00FF] rounded-r-3xl px-5 py-2 gap-2">
+                                    <p>Life</p>
+                                    <img src="./images/Life-icon.png" alt="Life">
+                                    <p>1</p>
+                                </div>
+                            
+                                <div class="flex text-white bg-[#3B00DB] rounded-l-3xl  px-5 py-2 gap-2">
+                                    <span>Score</span>
+                                    <img src="./images/score.svg" alt="Score">                         
+                                    <span>1</span>
+                                </div>
+                            </div>
+      
+                            <!-- Warning Message -->
+                            <div class="flex justify-center">
+                                <p class="bg-black font-medium  text-red-600 mt-6 py-4 px-[30px] rounded-lg">Don't watch keyboard while playing</p>
+                            </div>
+
+
+
+                            <div class="flex justify-center items-center h-full">
+                                <p id="currentAlphabet" class="font-extrabold text-black text-7xl">Y</p>
+                            </div>
+
+                        <!-- Keyboard Layout -->
+                            <div class="mb-4">
+                                <div class="flex justify-center gap-[2px]">
+                                    <kbd id="q" class="kbd">q</kbd>
+                                    <kbd id="w" class="kbd">w</kbd>
+                                    <kbd id="e" class="kbd">e</kbd>
+                                    <kbd id="r" class="kbd">r</kbd>
+                                    <kbd id="t" class="kbd">t</kbd>
+                                    <kbd id="y" class="kbd">y</kbd>
+                                    <kbd id="u" class="kbd">u</kbd>
+                                    <kbd id="i" class="kbd">i</kbd>
+                                    <kbd id="o" class="kbd">o</kbd>
+                                    <kbd id="p" class="kbd">p</kbd>
+                                </div>
+                                <div class="flex justify-center gap-[2px]">
+                                    <kbd id="a" class="kbd">a</kbd>
+                                    <kbd id="s" class="kbd">s</kbd>
+                                    <kbd id="d" class="kbd">d</kbd>
+                                    <kbd id="f" class="kbd">f</kbd>
+                                    <kbd id="g" class="kbd">g</kbd>
+                                    <kbd id="h" class="kbd">h</kbd>
+                                    <kbd id="j" class="kbd">j</kbd>
+                                    <kbd id="k" class="kbd">k</kbd>
+                                    <kbd id="l" class="kbd">l</kbd>
+                                </div>
+                                <div class="flex justify-center gap-[2px]">
+                                    <kbd id="z" class="kbd">z</kbd>
+                                    <kbd id="x" class="kbd">x</kbd>
+                                    <kbd id="c" class="kbd">c</kbd>
+                                    <kbd id="v" class="kbd">v</kbd>
+                                    <kbd id="b" class="kbd">b</kbd>
+                                    <kbd id="n" class="kbd">n</kbd>
+                                    <kbd id="m" class="kbd">m</kbd>
+                                    <kbd id="/" class="kbd">/</kbd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+
+
+
             </div>
 
-            <!-- Keyboard Layout -->
-            <div>
+           
+            <!-- <div>
 
                 <div class="flex justify-center gap-2 my-1 w-full">
                     <kbd id="q" class="kbd">q</kbd>
@@ -75,10 +152,10 @@
                     <kbd id="m" class="kbd">m</kbd>
                     <kbd id="/" class="kbd">/</kbd>
                 </div>
-            </div>
+            </div> -->
+
            
-            <!-- Life and Score -->
-            <div class="flex justify-evenly">
+            <!-- <div class="flex justify-evenly">
                 <div class="flex text-white bg-[#8F00FF] rounded-3xl px-5 py-2 gap-2">
                     <p>Life</p>
                     <img src="./images/Life-icon.png" alt="Life">
@@ -93,23 +170,24 @@
 
 
                 </div>
-            </div>
+            </div> -->
 
         </section>
 
 
         <section id="result" class="hidden">
-            
-              <div class="flex flex-col justify-center items-center min-h-screen">
-                <div class="text-white text-center space-y-6 bg-gradient-to-br from-gray-300 via-gray-800 to-transparent rounded-lg p-11">
+
+            <div class="flex flex-col justify-center items-center min-h-screen">
+                <div
+                    class="text-white text-center space-y-6 bg-gradient-to-br from-gray-300 via-gray-800 to-transparent rounded-lg p-11">
                     <h1 class="font-extrabold text-6xl">
                         <span>Score: </span><span>14</span>
                     </h1>
                     <button class="btn bg-white text-black py-4 px-8 font-semibold">Play Again</button>
                     <p class="text-center">Practice will make you Pro</p>
                 </div>
-              </div>
-            
+            </div>
+
 
 
         </section>
