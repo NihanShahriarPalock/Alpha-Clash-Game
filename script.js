@@ -21,8 +21,12 @@ function getTextElementValue(elementId){
 function setTextElementValue(elementId,value) {
     const element = document.getElementById(elementId);
     element.innerText = value;
-  
+}
 
+function getElementTextById(elementId){
+    const element=document.getElementById(elementId);
+    const text = element.innerText;
+    return  text;
 }
 
 function generateAlphabet() {
@@ -65,11 +69,18 @@ function handleKeyboardPress(event) {
         const updateScore = currentScore - 1;
         setTextElementValue('lifeCount', updateScore);
 
+        if (updateScore === 0){
+            gameOver();
+            
+        }
+
         removeKeyboardColor(expectedAlphabet);
         continueGame();
 
     }
 }
+
+ 
 
 document.addEventListener('keyup', handleKeyboardPress);
 
@@ -85,7 +96,23 @@ function continueGame() {
 }
 function playNow() {
     hideSection('dashboard');
+    hideSection('result');
     showSection('gameControl');
+
+    setTextElementValue('lifeCount', 3);
+    setTextElementValue('scoreCount', 0);
+
     continueGame();
+
+}
+
+function gameOver(){
+    hideSection('gameControl');
+    showSection('result');
+    const element = getTextElementValue('scoreCount');
+    setTextElementValue('finalScore',element);
+    // console.log(element);
+    const currentAlphabet = getElementTextById('currentAlphabet');
+    removeKeyboardColor(currentAlphabet);
 
 }
